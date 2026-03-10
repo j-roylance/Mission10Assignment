@@ -1,3 +1,5 @@
+// Model representing a bowler in the Bowling League database
+
 namespace Mission10Assignment.Models;
 
 public class Bowler
@@ -11,6 +13,6 @@ public class Bowler
     public string? BowlerState { get; set; }
     public string? BowlerZip { get; set; }
     public string? BowlerPhoneNumber { get; set; }
-    public int TeamID { get; set; }
-    public Team? Team { get; set; }
+    public int TeamID { get; set; }      // Foreign key to Teams table
+    public Team? Team { get; set; }       // Navigation property to the bowler's team
 }
