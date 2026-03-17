@@ -21,7 +21,7 @@ builder.Services.AddCors(options =>
 });
 
 // Register the database context with SQLite using the connection string from appsettings.json
-builder.Services.AddDbContext<BookstoreContext>(options =>
+builder.Services.AddDbContext<BowlingLeagueContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();

@@ -3,7 +3,7 @@
 import React from 'react'
 import './App.css'
 import Header from './Header';
-import BooksList from './booksList';
+import PlayerList from './playerList';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       {/* Page heading describing the app */}
       <Header/>
       {/* Table of bowlers fetched from the API */}
-      <BooksList/>
+      <PlayerList/>
     </>
   )
 };
